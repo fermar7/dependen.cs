@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using DependenCS.CodeAnalysis.API.Data.Enums;
+using DependenCS.CodeAnalysis.API.Data.Interfaces;
 
 namespace DependenCS.CodeAnalysis.API.Data.Models
 {
-    public class Method : Member
+    public class Method : MemberBase, IHasParameters
     {
         public IEnumerable<Parameter> Parameters { get; }
 

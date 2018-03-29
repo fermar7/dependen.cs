@@ -6,17 +6,15 @@ using System.Text;
 
 namespace DependenCS.CodeAnalysis.API.Data.Models
 {
-    public abstract class Member : IHasName, IHasType, IHasAccessModifier
+    public abstract class MemberBase : SymbolBase, IHasType, IHasAccessModifier
     {
-        public string Name { get; }
-
         public Type Type { get; }
 
         public AccessModifier AccessModifier { get; }
 
-        protected Member(string name, Type type, AccessModifier accessModifier)
+        protected MemberBase(string name, Type type, AccessModifier accessModifier)
+            : base(name)
         {
-            this.Name = name;
             this.Type = type;
             this.AccessModifier = accessModifier;
         }

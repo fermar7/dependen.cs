@@ -1,7 +1,5 @@
 ﻿using DependenCS.CodeAnalysis.API.Data.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DependenCS.CodeAnalysis.API.Data.Models
 {
