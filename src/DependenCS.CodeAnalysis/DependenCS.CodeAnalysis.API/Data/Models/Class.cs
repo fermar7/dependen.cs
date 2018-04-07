@@ -10,7 +10,7 @@ namespace DependenCS.CodeAnalysis.API.Data.Models
     {
         public IEnumerable<Constructor> Constructors { get; }
 
-        protected Class(string name, AccessModifier accessModifier, IEnumerable<Constructor> constructors) 
+        internal Class(string name, AccessModifier accessModifier, IEnumerable<Constructor> constructors) 
             : base(name, accessModifier)
         {
             this.Constructors = constructors;
