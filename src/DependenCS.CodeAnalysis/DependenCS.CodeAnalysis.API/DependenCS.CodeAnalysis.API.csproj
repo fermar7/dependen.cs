@@ -159,6 +159,14 @@
     <Compile Include="Domain\DependecyCodeAnalyzer.cs" />
     <Compile Include="Domain\DependencyQueryMode.cs" />
     <Compile Include="Domain\Exceptions\BootstrappingException.cs" />
+    <Compile Include="Domain\Extensions\AccessibilityExtensions.cs" />
+    <Compile Include="Domain\ProcessorStore.cs" />
+    <Compile Include="Domain\SymbolProcessors\ClassSymbolProcessor.cs" />
+    <Compile Include="Domain\SymbolProcessors\FieldSymbolProcessor.cs" />
+    <Compile Include="Domain\SymbolProcessors\IMemberSymbolProcessor.cs" />
+    <Compile Include="Domain\SymbolProcessors\ISymbolProcessor.cs" />
+    <Compile Include="Domain\SymbolProcessors\ITypeSymbolProcessor.cs" />
+    <Compile Include="Domain\SymbolProcessors\MethodSymbolProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CodeAnalysisBootstrapper.cs" />
   </ItemGroup>
